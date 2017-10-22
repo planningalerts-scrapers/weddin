@@ -1,6 +1,6 @@
 require 'scraperwiki'
 require 'horizon_xml'
-ENV['MORPH_PERIOD'] = '2017'
+
 collector = Horizon_xml.new
 collector.setPeriod(ENV['MORPH_PERIOD']).setDomain('horizondap').setInfoUrl(collector.host_url).setCommentUrl('mailto:mail@weddin.nsw.gov.au')
 
